@@ -9,7 +9,7 @@ def hello_world():
     ans = """<!DOCTYPE html> <html> <head> <title>Occupation Statistics</title></head> <table style="width:100>"""
     for k in occDict:
         ans = ans + """<tr> <th>""" + k + """</th>""" + """<th>""" + str(occDict[k]) + """</th> </tr>"""
-        occL.append(k)    
+        occL = occL.append(k)    
     ans = ans + """</table>"""
     ans = ans + random.choice(occL)
     ans = ans + """</html>"""
